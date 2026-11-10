@@ -89,33 +89,7 @@ npm run dev
   ```
 - **Sovereign Simulation Mode:** If no key is entered, KisanSetu AI automatically operates in resilient offline mode with pre-loaded authentic audio synthesis and Mandi rates, ensuring 100% demo reliability!
 
----
 
-## 📱 LinkedIn / X Demo Post (Copy & Share)
-
-```text
-🚀 Proud to introduce KisanSetu AI (किसानसेतु) — Built for the #GreatIndianAIInternshipChallenge by @GnaniAi! 🇮🇳
-
-KisanSetu AI is a sovereign multilingual voice operating desk built natively on Gnani AI's proprietary speech & reasoning stack:
-✨ Speech-to-Text: Gnani Prisma v3.0 (Streaming under 200ms with code-mixing & 8kHz telephony noise cancellation)
-🧠 Reasoning: Gnani Evon v3.3 (30B MoE Indic reasoning for APMC Mandi rates & crop diagnostics)
-🔊 Text-to-Speech: Gnani Timbre v3.0 (Indic prosody with lakh & crore numerals)
-
-🌾 Built to solve real Bharat problems for farmers and rural kirana stores across Hindi, Kannada, Telugu, Tamil, Marathi & Hinglish.
-
-Watch our 60-second live demo! 👇
-#GnaniAI #GreatIndianAIInternshipChallenge #SovereignAI #BuildForIndia #AIforBharat
-```
-
----
-
-## 📽️ 60-Second Video Pitch Script (Demo Day Drop Award)
-
-- **[0:00 - 0:10] Hook:** *"Rural India doesn't interact through keyboards — they communicate through voice and telephony calls with heavy tractor and field noise. Meet KisanSetu AI."*
-- **[0:10 - 0:25] Demo 1 (Prisma STT + Evon):** Speak in Kannada or Hindi: *"What is today's tomato modal price in Kolar Mandi?"* Show instant 200ms transcription on Prisma v3.0 and Evon's structured Mandi price card.
-- **[0:25 - 0:40] Demo 2 (Timbre TTS + Crop Doctor):** Ask about yellow leaf symptoms. Watch Evon diagnose leaf blight and Timbre v3.0 speak the remedy with natural Indic prosody.
-- **[0:40 - 0:50] Demo 3 (Noise Lab):** Turn on 8kHz Telephony Noise Simulation and demonstrate how Gnani Prisma transcribes noisy phone calls where standard models fail.
-- **[0:50 - 1:00] Conclusion:** *"Built on Gnani's Sovereign Stack for the Great Indian AI Internship Challenge. Powering India's 140 million farming families."*
 
 ---
 
