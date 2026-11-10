@@ -287,3 +287,30 @@ async def simulate_noise_endpoint(
     audio_bytes = await audio_file.read()
     noisy_wav = simulate_telephony_channel(audio_bytes, noise_type=noise_type, noise_level=noise_level)
     return Response(content=noisy_wav, media_type="audio/wav")
+
+# Serve built frontend if dist exists (Production Single-Service Deployment on Render/Cloud)
+import os
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+dist_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist"))
+
+@app.get("/")
+def serve_root():
+    index_path = os.path.join(dist_dir, "index.html")
+    if os.path.exists(index_path):
+        return FileResponse(index_path)
+    return {"message": "KisanSetu AI API is running"}
+
+if os.path.exists(dist_dir):
+    assets_dir = os.path.join(dist_dir, "assets")
+    if os.path.exists(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        file_path = os.path.join(dist_dir, full_path)
+        if full_path and os.path.exists(file_path) and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join(dist_dir, "index.html"))
+
